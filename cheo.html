@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cheo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Inges</title>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class="Ganadora">Y LA GANADORA CON LA MEJOR RISA DEL AÑO ES PARA .......</p>
+</head>
+<body>
+    <div class="centrar-imagen">
+    <img src="paolita.jpeg " alt="Imagen centrada" width="300" height="300">
+    </div>
+    <br>
+    <div class="miaudio">
+ <!-- Etiqueta audio con el archivo de sonido -->
+ <audio id="miAudio">
+    <source src="audio de patada nuclear.mp4" type="audio/mpeg">
+
+</audio>
+
+<!-- Botón para controlar la reproducción del audio -->
+<button onclick="reproducirAudio()">click para felicitarla</button>
+
+<script>
+    function reproducirAudio() {
+        var audio = document.getElementById("miAudio");
+        if (audio.paused) {
+            audio.play();  // Reproduce el audio si está en pausa
+        } else {
+            audio.pause(); // Pausa el audio si ya está reproduciéndose
+        }
+    }
+</script>
+</div>
+</body>
+</html>
